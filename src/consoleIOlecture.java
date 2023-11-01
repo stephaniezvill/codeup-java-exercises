@@ -17,10 +17,22 @@ public class consoleIOlecture {
 //        String userInput = scanner.nextLine();
 //        System.out.println(userInput);
 
+        //The multiple input datatypes problem
+        //Scanner will get you
+        // If you take in an integer, for example
         System.out.println("Enter a number:");
-        int userNumber = scanner.nextInt();
-        System.out.printf("You entered %d%n", userNumber);
+        int userNumber = Integer.parseInt(scanner.nextLine());
+        System.out.printf("You entered %s%n", userNumber);
+
+        //And after an integer, you take in a string
         System.out.println("Do you want to enter another number?");
+        String ghostString = scanner.nextLine();
+        String userResponse = scanner.nextLine();
+        System.out.printf("You said %s",userResponse);
+
+        System.out.println("Enter a random sentence:");
+        String userSentence = scanner.nextLine();
+        System.out.printf("Your sentence is: %s", userSentence);
     }
 }
 

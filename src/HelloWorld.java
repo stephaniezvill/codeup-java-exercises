@@ -72,7 +72,7 @@ public class HelloWorld {
 //        x /= y;
 //        y -= x;
 
-        int x = Integer.MAX_VALUE;
-        x = x + 1;
+//        int x = Integer.MAX_VALUE;
+//        x = x + 1;
     }
 }
