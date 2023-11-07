@@ -8,8 +8,8 @@ public class SlothTest {
 
     public static void main(String[] args) {
         Sloth cloud = new Sloth();
-        cloud.name = "Cloud";
-        cloud.sound = "Meeping";
+        cloud.setName("Cloud");
+        cloud.setSound("Meeping");
 
         Contact fidel = new Contact ("fidel","meeping");
         System.out.println(fidel.display());
