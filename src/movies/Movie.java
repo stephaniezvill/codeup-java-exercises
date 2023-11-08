@@ -1,6 +1,7 @@
 package movies;
 
 public class Movie {
+
     private String name;
     private String category;
 
@@ -8,6 +9,20 @@ public class Movie {
         this.name = name;
         this.category = category;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                '}';
+    }
+
+    public String toPrettyString() {
+        return String.format("%s -- %s", name, category);
+    }
+
+    // getters and setters
 
     public String getName() {
         return name;
@@ -25,4 +40,3 @@ public class Movie {
         this.category = category;
     }
 }
-

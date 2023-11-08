@@ -1,34 +1,38 @@
-class Person {
-    String name;
-
-    Person(String name) {
-        this.name = name;
-    }
-}
+import java.util.Arrays;
 
 public class ArraysExercises {
     public static void main(String[] args) {
-        Person[] people = new Person[3];
-        people[0] = new Person("Alice");
-        people[1] = new Person("Bob");
-        people[2] = new Person("Charlie");
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(numbers));
 
-        for (Person person : people) {
-            System.out.println(person.name);
-        }
+        System.out.println(Arrays.toString(numbers));
 
-        Person newPerson = new Person("David");
-        people = addPerson(people, newPerson);
+        Person [] people = new Person[3];
+        people[0] = new Person("bob");
+        people[1] = new Person("sue");
+        people[2] = new Person("tom");
 
-        for (Person person : people) {
-            System.out.println(person.name);
-        }
+        printMyPeople(people);
+
+        Person [] morePeople = addPerson(people, new Person("betsy"));
+
+        printMyPeople(morePeople);
     }
 
-    public static Person[] addPerson(Person[] people, Person newPerson) {
-        Person[] newPeople = new Person[people.length + 1];
-        System.arraycopy(people, 0, newPeople, 0, people.length);
-        newPeople[people.length] = newPerson;
-        return newPeople;
+    private static Person [] addPerson(Person[] ppl, Person person) {
+        // create an array that is 1 larger than ppl.length()
+        // copy all the people in ppl to the new array
+        Person [] morePpl = Arrays.copyOf(ppl, ppl.length + 1);
+
+        // throw person at the end of the array
+        morePpl[morePpl.length - 1] = person;
+
+        return morePpl;
+    }
+
+    private static void printMyPeople(Person[] ppl) {
+        for (Person person : ppl) {
+            System.out.println(person);
+        }
     }
 }
