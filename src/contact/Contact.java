@@ -1,5 +1,5 @@
 //blueprint/template
-package Contact;
+package contact;
 
 public class Contact {
 

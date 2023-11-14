@@ -1,23 +1,29 @@
 package shapes;
+public class Rectangle extends Quadrilateral {
 
-public class Rectangle {
-    protected int length;
-    protected int width;
 
-    //this is a constructor that accepts two numbers for length and width, and sets those properties.
-    public Rectangle(int length, int width) {
-        this.length = length;
-        this.width = width;
+    public Rectangle(double length, double width) {
+        super(length, width);
     }
 
-    //gets area calculation
-    public int getArea() {
+    @Override
+    public double getPerimeter() {
+        return 2 * length + 2 * width;
+    }
+
+    @Override
+    public double getArea() {
         return length * width;
     }
 
-    //gets perimeter calculation
-    public int getPerimeter() {
-        return (2 * length) + (2 * width);
+    @Override
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    @Override
+    public void setWidth(double width) {
+        this.width = width;
     }
 }
 

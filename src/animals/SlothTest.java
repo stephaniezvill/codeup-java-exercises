@@ -1,6 +1,6 @@
-package Animals;
+package animals;
 
-import Contact.Contact;
+import contact.Contact;
 
 public class SlothTest {
     public SlothTest() {
