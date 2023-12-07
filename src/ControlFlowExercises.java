@@ -1,60 +1,45 @@
 import java.util.Scanner;
 
 public class ControlFlowExercises {
+
     public static void main(String[] args) {
-        //Question #1 a.While
 //        int i = 5;
-//        while (i <= 15) {
+//        while (i <= 15){
 //            System.out.println(i);
 //            i++;
 //        }
-        //Question #1 b.Do While
-//        int i =0;
+
+//        int i = 0;
 //        do {
 //            System.out.println(i);
-//            i += 2;
-//        }while(i <= 100);
-        //Question #1 b.2
+//            i+=2;
+//        } while (i <= 100);
+
 //        int i = 100;
 //        do {
 //            System.out.println(i);
-//            i-= 5;
-//        } while (i > -10);
-        //Question #1 b.3
+//            i-=5;
+//        } while (i >= -10);
+
 //        long i = 2;
 //        do {
 //            System.out.println(i);
 //            i*=i;
-//        } while(i <= 1000000);
-        //Question #1 c.For
-//        int i = 5;
-//        for (i = 5; i <= 15; i++) {
-//            System.out.println(i);
-//        }
-//        for (int i = 0; i <= 100; i += 2) {
-//            System.out.println(i);
-//        }
-//        for (int i = 100; i >= -10; i -= 5) {
-//            System.out.println(i);
-//        }
-//        for (int i = 2; i < 1000000; i *= 2) {
-//            System.out.println(i);
-//        }
+//        } while (i <= 1000000);
 
-        //Fizzbuzz
-//        for (int i = 0; 1 <= 100; i++) {
-//            if (i % 3 == 0 && i % 5 == 0) {
-//                System.out.println("fizz buzz");
-//            }
-//            if (i % 3 == 0) {
-//                System.out.println("fizz");
-//            } else if (i % 5 == 0) {
-//                System.out.println("buzz");
+//        for (int i = 0; i <= 100; i++){
+//            if (i % 3 == 0 && i % 5 == 0){
+//                System.out.println("Fizz Buzz");
+//            } else if (i % 3 == 0){
+//                System.out.println("Fizz");
+//            } else if (i % 5 == 0){
+//                System.out.println("Buzz");
 //            } else {
 //                System.out.println(i);
 //            }
 //        }
-        //display a table of powers
+
+//        String userChoice;
         Scanner scanner = new Scanner(System.in);
 //        do {
 //            System.out.println("Enter an integer:");
@@ -67,6 +52,7 @@ public class ControlFlowExercises {
 //            System.out.println("Do you want to continue?");
 //            userChoice = scanner.nextLine().toLowerCase();
 //        } while(userChoice.equals("y") || userChoice.equals("yes"));
+
 
         String userChoice;
         do {
@@ -88,4 +74,3 @@ public class ControlFlowExercises {
         } while (userChoice.equals("yes") || userChoice.equals("y"));
     }
 }
-
